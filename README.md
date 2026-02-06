@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+Setup steps:
 
-First, run the development server:
+npm install @optimizely/cms-sdk
+npm install -D @optimizely/cms-cli
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git submodule add https://github.com/evest/optimizely-cms-typegen.git optimizely-cms-typegen
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+update submodule package.json -- add script:
+    "prepare": "npm run build",
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+edit package.json -- add devDependency:
+	"optimizely-cms-typegen": "file:./optimizely-cms-typegen",
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm install
 
-## Learn More
+add .env
 
-To learn more about Next.js, take a look at the following resources:
+pull types from the CMS:
+	npx @optimizely/cms-cli config pull --output types.json
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+scaffolding of types:
+	npx optimizely-cms-typegen --input ./types.json --output ./src/cms/content-types.ts --with-registry
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+update layout.tsx
 
-## Deploy on Vercel
+update page.tsx
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+run the site
+	npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
