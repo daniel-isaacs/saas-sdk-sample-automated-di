@@ -1,0 +1,3 @@
+[submodule "optimizely-cms-typegen"]
+	path = optimizely-cms-typegen
+	url = https://github.com/evest/optimizely-cms-typegen.git

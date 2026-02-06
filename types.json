@@ -1,0 +1,390 @@
+{
+  "propertyGroups": [
+    {
+      "key": "seo",
+      "displayName": "SEO",
+      "sortOrder": 1,
+      "created": "2026-01-14T03:09:33.8429133+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-16T03:50:18.3991655+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf"
+    },
+    {
+      "key": "meta",
+      "displayName": "Metadata",
+      "sortOrder": 2,
+      "created": "2026-01-14T03:09:33.8738404+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-16T03:50:18.4130797+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf"
+    }
+  ],
+  "contentTypes": [
+    {
+      "key": "IndexPage",
+      "displayName": "Index Page",
+      "description": "Index Page Template",
+      "baseType": "_page",
+      "isContract": false,
+      "sortOrder": 0,
+      "mayContainTypes": [
+        "*"
+      ],
+      "mediaFileExtensions": [],
+      "compositionBehaviors": [],
+      "contracts": [],
+      "created": "2026-01-15T03:11:36.9252105+00:00",
+      "lastModified": "2026-01-19T22:53:37.3174299+00:00",
+      "lastModifiedBy": "bshenbagakuthalam@cboe.com",
+      "properties": {
+        "CB": {
+          "type": "array",
+          "displayName": "CB",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 0,
+          "allowedTypes": [],
+          "restrictedTypes": [],
+          "items": {
+            "type": "content",
+            "allowedTypes": [
+              "_component"
+            ],
+            "restrictedTypes": []
+          }
+        },
+        "Navigation": {
+          "type": "component",
+          "contentType": "Button",
+          "displayName": "Load Products",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 0,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        },
+        "ContentBlock": {
+          "type": "array",
+          "displayName": "Content Block",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 1,
+          "allowedTypes": [],
+          "restrictedTypes": [],
+          "items": {
+            "type": "content",
+            "allowedTypes": [],
+            "restrictedTypes": []
+          }
+        },
+        "TextArea": {
+          "type": "richText",
+          "displayName": "Text Area",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 2,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        }
+      }
+    },
+    {
+      "key": "Heading2",
+      "displayName": "Heading2",
+      "description": "Heading2",
+      "baseType": "_component",
+      "isContract": false,
+      "sortOrder": 0,
+      "mayContainTypes": [],
+      "mediaFileExtensions": [],
+      "compositionBehaviors": [],
+      "contracts": [],
+      "created": "2026-01-15T03:44:07.7687841+00:00",
+      "lastModified": "2026-01-15T14:54:38.6885535+00:00",
+      "lastModifiedBy": "bshenbagakuthalam@cboe.com",
+      "properties": {
+        "Heading2": {
+          "type": "string",
+          "format": "shortString",
+          "displayName": "TextHeading",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 0,
+          "indexingType": "queryable",
+          "maxLength": 100,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        }
+      }
+    },
+    {
+      "key": "Button",
+      "displayName": "Button",
+      "description": "",
+      "baseType": "_component",
+      "isContract": false,
+      "sortOrder": 0,
+      "mayContainTypes": [],
+      "mediaFileExtensions": [],
+      "compositionBehaviors": [
+        "sectionEnabled",
+        "elementEnabled"
+      ],
+      "contracts": [],
+      "created": "2026-01-16T03:48:20.9483346+00:00",
+      "lastModified": "2026-01-21T21:04:58.8924126+00:00",
+      "lastModifiedBy": "bshenbagakuthalam@cboe.com",
+      "properties": {
+        "label": {
+          "type": "string",
+          "displayName": "TestButton",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 10,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        },
+        "buttonUrl": {
+          "type": "string",
+          "format": "shortString",
+          "displayName": "Button URL",
+          "description": "Button link",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 20,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        }
+      }
+    },
+    {
+      "key": "Heading",
+      "displayName": "Heading",
+      "description": "",
+      "baseType": "_component",
+      "isContract": false,
+      "sortOrder": 0,
+      "mayContainTypes": [],
+      "mediaFileExtensions": [],
+      "compositionBehaviors": [
+        "sectionEnabled",
+        "elementEnabled"
+      ],
+      "contracts": [],
+      "created": "2026-01-14T05:38:03.9056254+00:00",
+      "lastModified": "2026-01-16T03:50:18.6466495+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "properties": {
+        "heading": {
+          "type": "string",
+          "displayName": "Heading Text",
+          "description": "",
+          "localized": false,
+          "required": false,
+          "group": "Information",
+          "sortOrder": 0,
+          "allowedTypes": [],
+          "restrictedTypes": []
+        }
+      }
+    }
+  ],
+  "displayTemplates": [
+    {
+      "key": "HeadingDisplayTemplate",
+      "displayName": "Heading Display Options",
+      "baseType": "_component",
+      "isDefault": true,
+      "created": "2026-01-14T06:01:42.616553+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-16T03:50:18.8356377+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "settings": {
+        "headingStyle": {
+          "displayName": "Heading Style",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "h1": {
+              "displayName": "h1",
+              "sortOrder": 10
+            },
+            "h2": {
+              "displayName": "h2",
+              "sortOrder": 20
+            },
+            "h3": {
+              "displayName": "h3",
+              "sortOrder": 30
+            },
+            "h4": {
+              "displayName": "h4",
+              "sortOrder": 40
+            },
+            "h5": {
+              "displayName": "h5",
+              "sortOrder": 50
+            },
+            "h6": {
+              "displayName": "h6",
+              "sortOrder": 60
+            },
+            "paragraph": {
+              "displayName": "paragraph",
+              "sortOrder": 70
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "LandingSectionDisplayTemplate",
+      "displayName": "LandingSectionDisplayTemplate",
+      "baseType": "_component",
+      "isDefault": false,
+      "created": "2026-01-14T04:22:14.0423085+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-14T04:22:14.0423085+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "settings": {
+        "background": {
+          "displayName": "Background",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "red": {
+              "displayName": "Red",
+              "sortOrder": 0
+            },
+            "blue": {
+              "displayName": "Blue",
+              "sortOrder": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "SquareDisplayTemplate",
+      "displayName": "SquareDisplayTemplate",
+      "baseType": "_component",
+      "isDefault": false,
+      "created": "2026-01-14T04:22:14.1701473+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-14T04:22:14.1701473+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "settings": {
+        "color": {
+          "displayName": "Description font color",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "yellow": {
+              "displayName": "Yellow",
+              "sortOrder": 1
+            },
+            "green": {
+              "displayName": "Green",
+              "sortOrder": 2
+            },
+            "orange": {
+              "displayName": "Orange",
+              "sortOrder": 3
+            }
+          }
+        },
+        "orientation": {
+          "displayName": "Orientation",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "vertical": {
+              "displayName": "Vertical",
+              "sortOrder": 1
+            },
+            "horizontal": {
+              "displayName": "Horizontal",
+              "sortOrder": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "TileColumnDisplayTemplate",
+      "displayName": "TileColumnDisplayTemplate",
+      "nodeType": "column",
+      "isDefault": true,
+      "created": "2026-01-14T04:22:14.2450047+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-14T04:22:14.2450047+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "settings": {
+        "background": {
+          "displayName": "Background Color",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "red": {
+              "displayName": "Red",
+              "sortOrder": 1
+            },
+            "black": {
+              "displayName": "Black",
+              "sortOrder": 2
+            },
+            "grey": {
+              "displayName": "Grey",
+              "sortOrder": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "key": "TileRowDisplayTemplate",
+      "displayName": "TileRowDisplayTemplate",
+      "nodeType": "row",
+      "isDefault": true,
+      "created": "2026-01-14T04:22:14.2667108+00:00",
+      "createdBy": "b5025bcb04534dda9369234551c917bf",
+      "lastModified": "2026-01-14T04:22:14.2667108+00:00",
+      "lastModifiedBy": "b5025bcb04534dda9369234551c917bf",
+      "settings": {
+        "padding": {
+          "displayName": "Padding",
+          "editor": "select",
+          "sortOrder": 0,
+          "choices": {
+            "small": {
+              "displayName": "Small",
+              "sortOrder": 1
+            },
+            "medium": {
+              "displayName": "Medium",
+              "sortOrder": 2
+            },
+            "large": {
+              "displayName": "Large",
+              "sortOrder": 3
+            }
+          }
+        }
+      }
+    }
+  ],
+  "lastModified": "2026-02-06T08:37:55.0638335+00:00"
+}
